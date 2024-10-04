@@ -268,3 +268,55 @@ span{
     }
 }
 
+#WIX_ADS {
+    display:none !important;
+  }
+
+  /* Staff Section */
+.staff {
+    padding: 30px 20px; /* Adjusted padding */
+    margin-top: -30px;  /* Move section up */
+    text-align: center;
+}
+
+.staff-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.staff-card {
+    background-color: #333; /* Dark background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+}
+
+/* Staff Image Styling - Ensure it's circular and consistent */
+.staff-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Make the image circular */
+    margin-bottom: 10px;
+    object-fit: cover;  /* Ensures the image fits within the circle without distortion */
+    border: 2px solid #fff; /* Optional: Adds a white border for better contrast */
+}
+
+/* Hover Effect with Red Theme */
+.staff-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(255, 0, 0, 0.5); /* Red shadow on hover */
+    border: 2px solid #ff0000; /* Red border on hover */
+}
+
+.staff-card h3 {
+    color: #fff; /* White for name */
+}
+
+.staff-card p {
+    color: #ddd; /* Light grey for role */
+}
